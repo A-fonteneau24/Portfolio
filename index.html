@@ -1,28 +1,106 @@
-<DOCTYYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <title>mon premier site</title>
-        </head>
-        <body>
-            <h1>bienvenue sur mon site </h1>
-            <p>Ceci est mon premier paragraphe en HTML.</p>
-            <a href="https://github.com">Visitez mon github</a>
-            <hr>
-            <h2>mes compétences:</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>python</li>
-            </ul>
-            <img src="https://www.cril.univ-artois.fr/pyxai/assets/figures/github.png?raw=true" width="150" hight="150" alt="photo de profil">
-            <img src="https://github.com/A-fonteneau24/Portfolio/blob/main/img/background.jpg?raw=true" width="150" hight="150">
-            <img src="https://github.com/A-fonteneau24/Portfolio/blob/main/img/codage.jpg?raw=true" width="150" hight="150">
-            <img src="https://github.com/A-fonteneau24/Portfolio/blob/main/img/cv.png?raw=true" width="150" hight="150">
-            <img src="https://github.com/A-fonteneau24/Portfolio/blob/main/img/cybersecurite.png?raw=true" width="150" hight="150">
-            <img src="https://github.com/A-fonteneau24/Portfolio/blob/main/img/reseau.jpeg?raw=true" width="150" hight="150">
-            <footer>
-                <p>© 2025-mon portfolio</p>
-            </footer>
-        </body>
-    </html>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>mon premier site</title>
+        <style>
+            body {
+                background-image: url('https://static.vecteezy.com/system/resources/previews/020/084/502/non_2x/digital-technology-internet-network-connection-blue-green-background-cyber-information-abstract-speed-connect-communication-innovation-future-meta-tech-metaverse-neon-ai-big-data-illustration-3d-vector.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .menu-bar {
+                display: flex;
+                justify-content: flex-end;
+                width: 80%;
+                margin: 0 auto 20px auto;
+            }
+            .menu-bar a {
+                color: black
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .menu-left {
+                text-align: left;
+            }
+            .menu-center {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+            }
+            .menu-center span {
+                margin: 0 60px;
+            }
+            .menu-right {
+                display: flex;
+                gap: 50px;
+                text-align: right;
+            }
+            .img-center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .menu-item {
+                color: white;
+                background: white;
+                color: #1a237e;
+                padding: 10px 24px;
+                border-radius: 20px;
+                text-decoration: none;
+                font-weight: bold;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                transition: background 0.2s, color 0.2s;
+                border: none;
+            }
+
+            .menu-item:hover {
+                background: #1a237e;
+                color: white;
+            }
+            .footer-bar {
+                width: 100vw;
+                background: #7ecbff;
+                color: #1a237e;
+                text-align: center;
+                padding: 24px 0 20px 0;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                font-size: 1.2em;
+                font-weight: bold;
+                letter-spacing: 1px;
+                z-index: 100;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ...existing code... -->
+        <h1 align="center" style="color:white;">Bienvenue sur mon Portfolio </h1>
+        <div class="menu-bar">
+    <div class="menu-right">
+        <a class="menu-item" href="index.html">Accueil</a>
+        <a class="menu-item" href="projets.html">Projets</a>
+        <a class="menu-item" href="veille.html">Veille</a>
+        <a class="menu-item" href="stage.html">Stage</a>
+        <a class="menu-item" href="contact.html">Contact</a>
+    </div>
+</div>
+        <hr>
+        <p align="left">
+    <a href="CV_alexis.pdf" download style="color:white; font-weight:bold; text-decoration:underline;">
+        Télécharger mon CV
+    </a>
+</p>
+        <div style="display: flex; align-items: center; justify-content: flex-start;">
+    <img src="img/CV_alexis.png" width="400" height="575" alt="CV d'Alexis" title="CV d'Alexis">
+    <span style="color: white; font-size: 1.25em; font-weight: bold; margin-left: 180px;">
+        Mon profile : Bonjour je m'appelle Alexis fonteneau, j'ai 18 ans et je suis actuellement en 1ère année de BTS SIO.
+    </span>
+</div>
+        <footer class="footer-bar">
+            <span>© 2025-mon portfolio</span>
+        </footer>
+    </body>
+</html>
